@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+input{
+  width: 220px !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+  background-color: #1ABC9C !important;
+  color: white !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-dark{
+  background-color: #1ABC9C !important;
+
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(33 0 0) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+input{
+  width: 220px !important;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+  background-color: #1ABC9C !important;
+  color: white !important;
+}
+
+.bg-dark{
+  background-color: #1ABC9C !important;
+
+}
+.image404 {
+  width: 200px; 
+  height: auto; 
+}
+.error_message{
+  color: red;
+  margin-top: 15px;
+}
+.valid_message{
+  color: rgb(150, 81, 214);
+  margin-top: 15px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(33 0 0) !important;
+}
+.page404 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 80vh;
+}
+
+
+h4{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#errorLog {
+  color: red;
+  position: absolute;
+  top: 85%;
+  left: 44%;
+}
+
+
+.modif{
+  background-color:#6b79c9 !important;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.supp{
+  background-color:#170b02d4 !important;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content_2{
+  padding:20px;
+  background: white;
+  box-shadow: 1px 4px 10px 0px #9f9fad;
+}
+#inputlogin{
+  width: 300px !important;
+}
+#inputpassw{
+  width: 300px !important;
+}
+.content_login{
+  padding:20px;
+  background: white;
+  box-shadow: 1px 4px 10px 0px #9f9fad;
+
+}
+
+.loginform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.TitreLogin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: x-large;
+  font-weight: 500;
+}
+.SousTitreLogin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+}
+.login{
+  width: 300px;
+}
+#matricule{
+  margin-right: 20px;
+}
+
+#mat{
+  font-size: 50px;
+
+}
+.same-value {
+  background-color: #5096d899;
+}
+
+
+
+#old{
+  width: 465px !important;
+}
+#new{
+  width: 300px !important;
+}
+#date_bascul{
+  width: 300px !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255, 255, 255) !important;
+}
+#connexion{
+  border: solid #ffffff 2px;
+  margin-right: 12px;;
+}
+.more{
+  font-size: 40px !important;
+}
+.content_Graph{
+  padding:20px;
+  background: white;
+  box-shadow: 1px 4px 10px 0px #9f9fad;
+  height: 420px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: -15px;
+
+}
+
+.content_1{
+  padding:20px;
+  background: white;
+  box-shadow: 1px 4px 10px 0px #9f9fad;
+  height: 200px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-item {
+  margin-right: 20px;
+}
+
+.flex-item-right {
+  margin-right: 0;
+  margin-left: auto;
+}
+#ModalsID{
+  font-size: xx-large;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.close-button {
+  color: red;
+  font-size: 2.5em; /* You can adjust the font size as needed */
 }

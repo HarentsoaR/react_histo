@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Index from './Composants/index';
+import IndexEquipe from './Composants/indexEquipe'
+import Footer from './Composants/footer';
+import Header from './Composants/header';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import Login from './Composants/login';
+import NotFound from './Composants/NotFound';
+// import PrivateRoute from './CustomRoutes/PrivateRoute';
+import { useAuth } from './CustomRoutes/AuthContext';
+
+
 
 function App() {
+  const { isLoggedIn } = useAuth();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Navigate to="/login" />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/home" element={isLoggedIn ? <Index /> : <Navigate to="/" />} />
+          <Route path="/equipe" element={isLoggedIn ? <IndexEquipe /> : <Navigate to="/" />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
